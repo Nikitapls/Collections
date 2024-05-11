@@ -11,6 +11,8 @@
 		148675B52BEFFADB009413BB /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148675B42BEFFADB009413BB /* Stack.swift */; };
 		148675B72BEFFAF0009413BB /* StackStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148675B62BEFFAF0009413BB /* StackStatistics.swift */; };
 		148675C02BEFFBD2009413BB /* Collections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EF2B9D2BEE8F4B003628E8 /* Collections.framework */; };
+		148675C72BEFFFA7009413BB /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148675C62BEFFFA7009413BB /* StackTests.swift */; };
+		148675C92BEFFFDA009413BB /* StackStatisticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148675C82BEFFFDA009413BB /* StackStatisticsTests.swift */; };
 		14EF2BA12BEE8F4B003628E8 /* Collections.h in Headers */ = {isa = PBXBuildFile; fileRef = 14EF2BA02BEE8F4B003628E8 /* Collections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		148675B42BEFFADB009413BB /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		148675B62BEFFAF0009413BB /* StackStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatistics.swift; sourceTree = "<group>"; };
 		148675BC2BEFFBD2009413BB /* CollectionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		148675C62BEFFFA7009413BB /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		148675C82BEFFFDA009413BB /* StackStatisticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatisticsTests.swift; sourceTree = "<group>"; };
 		14EF2B9D2BEE8F4B003628E8 /* Collections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Collections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EF2BA02BEE8F4B003628E8 /* Collections.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Collections.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,6 +59,8 @@
 		148675BD2BEFFBD2009413BB /* CollectionsTests */ = {
 			isa = PBXGroup;
 			children = (
+				148675C62BEFFFA7009413BB /* StackTests.swift */,
+				148675C82BEFFFDA009413BB /* StackStatisticsTests.swift */,
 			);
 			path = CollectionsTests;
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 				TargetAttributes = {
 					148675BB2BEFFBD2009413BB = {
 						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 					14EF2B9C2BEE8F4B003628E8 = {
 						CreatedOnToolsVersion = 15.2;
@@ -198,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148675C72BEFFFA7009413BB /* StackTests.swift in Sources */,
+				148675C92BEFFFDA009413BB /* StackStatisticsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +234,7 @@
 		148675C42BEFFBD2009413BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -234,6 +244,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -241,6 +252,7 @@
 		148675C52BEFFBD2009413BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
