@@ -10,7 +10,6 @@
 		148675B32BEFFACA009413BB /* LastInFirstOutContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148675B22BEFFACA009413BB /* LastInFirstOutContainer.swift */; };
 		148675B52BEFFADB009413BB /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148675B42BEFFADB009413BB /* Stack.swift */; };
 		148675B72BEFFAF0009413BB /* StackStatistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148675B62BEFFAF0009413BB /* StackStatistics.swift */; };
-		148675BF2BEFFBD2009413BB /* CollectionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148675BE2BEFFBD2009413BB /* CollectionsTests.swift */; };
 		148675C02BEFFBD2009413BB /* Collections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EF2B9D2BEE8F4B003628E8 /* Collections.framework */; };
 		14EF2BA12BEE8F4B003628E8 /* Collections.h in Headers */ = {isa = PBXBuildFile; fileRef = 14EF2BA02BEE8F4B003628E8 /* Collections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -30,7 +29,6 @@
 		148675B42BEFFADB009413BB /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		148675B62BEFFAF0009413BB /* StackStatistics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackStatistics.swift; sourceTree = "<group>"; };
 		148675BC2BEFFBD2009413BB /* CollectionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		148675BE2BEFFBD2009413BB /* CollectionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsTests.swift; sourceTree = "<group>"; };
 		14EF2B9D2BEE8F4B003628E8 /* Collections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Collections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EF2BA02BEE8F4B003628E8 /* Collections.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Collections.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,7 +55,6 @@
 		148675BD2BEFFBD2009413BB /* CollectionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				148675BE2BEFFBD2009413BB /* CollectionsTests.swift */,
 			);
 			path = CollectionsTests;
 			sourceTree = "<group>";
@@ -201,7 +198,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				148675BF2BEFFBD2009413BB /* CollectionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
