@@ -1,0 +1,43 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-macos10.13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Collections
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import Collections
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct StackStatistics<Element> : Collections.LastInFirstOutContainer where Element : Swift.Comparable {
+  public init(_ elements: [Element] = [])
+  public var count: Swift.Int {
+    get
+  }
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public mutating func push(_ newElement: Element)
+  public func top() -> Element?
+  @discardableResult
+  public mutating func pop() -> Element?
+  public func minimumElement() -> Element?
+}
+public struct Stack<Element> : Collections.LastInFirstOutContainer {
+  public init(_ elements: [Element] = [])
+  public var count: Swift.Int {
+    get
+  }
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public mutating func push(_ newElement: Element)
+  public func top() -> Element?
+  @discardableResult
+  public mutating func pop() -> Element?
+}
+public protocol LastInFirstOutContainer {
+  associatedtype Element
+  mutating func push(_ newElement: Self.Element)
+  func top() -> Self.Element?
+  @discardableResult
+  mutating func pop() -> Self.Element?
+}
