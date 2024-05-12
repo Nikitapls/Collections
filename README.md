@@ -6,6 +6,12 @@ This repository contains the source code of our custom collections.
 The code is organized into a static framework that can be used in both iOS and macOS projects.
 A `DemoApplication` demonstrating the use of the framework is also included.
 
+## Custom Collections
+
+This repository includes several collections:
+- The `Stack` class provides basic stack operations.
+- The `StackStatistics` class extends the functionality of the `Stack` with a `minimumElement` method for efficient minimum element retrieval.
+
 ## Software Requirements
 
 To run the code you need Swift version `5.9.2` or later, Xcode version `15.2.0` or later.
