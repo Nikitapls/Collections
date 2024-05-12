@@ -2,16 +2,34 @@
 
 ## About
 
-This repository contains the source code for custom collections.
+This repository contains the source code of our custom collections.
+The code is organized into a static framework that can be used in both iOS and macOS projects.
+A `DemoApplication` demonstrating the use of the framework is also included.
 
 ## Software Requirements 
 
-To run the code you have to use Swift version 5.9.2 or later, Xcode version 15.2.0 or later.
+To run the code you need Swift version `5.9.2` or later, Xcode version `15.2.0` or later.
+
+## Supported platforms
+
+This framework supports both macOS and iOS application development.
+The minimum supported versions are `12.0` for iOS and `10.13` for macOS.
+
+## Usage
+
+To integrate the framework in your project:
+1. Download the latest release version of the `Collections.xcramework` from this repository.
+2. Add the `Collections.xcramework` to your project. We recommend you to choose the `Do not embed` option.
 
 ## Versioning
 
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+We follow [SemVer 2.0](https://semver.org/#summary) for versioning. You can find the available versions in the tags of this repository.
+
+## License
+
+Please refer to the [LICENSE](./LICENSE.md) file for more details.
 
 ## Contact
 
-If you have any questions or feedback, feel free to open an issue or submit a pull request.
+If you have any questions or feedback, please feel free to contact me at **nikita.puzikov.work@gmail.com**.
+
