@@ -6,7 +6,7 @@ This repository contains the source code of our custom collections.
 The code is organized into a static framework that can be used in both iOS and macOS projects.
 A `DemoApplication` demonstrating the use of the framework is also included.
 
-## Software Requirements 
+## Software Requirements
 
 To run the code you need Swift version `5.9.2` or later, Xcode version `15.2.0` or later.
 
@@ -32,4 +32,3 @@ Please refer to the [LICENSE](./LICENSE.md) file for more details.
 ## Contact
 
 If you have any questions or feedback, please feel free to contact me at **nikita.puzikov.work@gmail.com**.
-
