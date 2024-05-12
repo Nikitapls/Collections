@@ -4,22 +4,19 @@ SCRIPT_FOLDER=$(dirname -- "$0")
 
 cd "$SCRIPT_FOLDER" || exit
 
-# Create the archives
-xcodebuild archive \
+archive_framework() {
+  platform=$1
+  xcodebuild archive \
     -project ./Collections/Collections.xcodeproj \
     -scheme Collections \
-    -destination "generic/platform=iOS" \
-    -archivePath "archives/Collections-iOS" \
+    -destination "generic/platform=$platform" \
+    -archivePath "archives/Collections-$platform" \
     SKIP_INSTALL=NO \
     BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+}
 
-xcodebuild archive \
-    -project ./Collections/Collections.xcodeproj \
-    -scheme Collections \
-    -destination "generic/platform=macOS" \
-    -archivePath "archives/Collections-macOS" \
-    SKIP_INSTALL=NO \
-    BUILD_LIBRARY_FOR_DISTRIBUTION=YES 
+archive_framework iOS
+archive_framework macOS
 
 # Create the XCFramework
 xcodebuild -create-xcframework \
