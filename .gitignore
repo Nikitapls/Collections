@@ -1,5 +1,5 @@
 # macOS env
 .DS_Store
 
-## User settings
+# Xcode user settings
 xcuserdata/
