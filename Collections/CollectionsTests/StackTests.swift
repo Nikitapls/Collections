@@ -12,6 +12,14 @@ final class StackIsStructureTests: XCTestCase {
     }
 }
 
+final class StackGenericsTests: XCTestCase {
+    func test_withVariousGenericParameters() {
+        _ = Stack<Int>()
+        _ = Stack<Double>()
+        _ = Stack<String>()
+    }
+}
+
 final class StackCountTests: XCTestCase {
     func test_count_withEmptyStack_returnsZero() {
         XCTAssertEqual(Stack<Int>().count, 0)
@@ -70,7 +78,7 @@ final class StackPushTests: XCTestCase {
 }
 
 final class StackPopTests: XCTestCase {
-    var stack: Stack<Int>!
+    var stack = Stack<Int>()
 
     override func setUp() {
         stack = Stack<Int>()
