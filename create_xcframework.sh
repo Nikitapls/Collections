@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
 
+SCRIPT_FOLDER=$(dirname -- "$0")
+
+cd "$SCRIPT_FOLDER" || exit
+
 # Create the archives
 xcodebuild archive \
     -project ./Collections/Collections.xcodeproj \
