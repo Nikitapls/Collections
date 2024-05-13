@@ -13,9 +13,7 @@ archive_framework() {
     -project ./Collections/Collections.xcodeproj \
     -scheme Collections \
     -destination "generic/platform=$platform" \
-    -archivePath "$ARCHIVE_PATH/$FRAMEWORK_NAME-$platform" \
-    SKIP_INSTALL=NO \
-    BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+    -archivePath "$ARCHIVE_PATH/$FRAMEWORK_NAME-$platform"
 }
 
 archive_framework iOS
