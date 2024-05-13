@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Collections</string>
 	<key>CFBundleIdentifier</key>
-	<string>nikitapuzikov.framework.multiplatform.Collections</string>
+	<string>nikitapuzikov.framework.multiplatform.collections.Collections</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
