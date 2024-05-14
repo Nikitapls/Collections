@@ -9,7 +9,7 @@ cd "${SCRIPT_FOLDER}" || exit
 archive_framework() {
   platform="${1}"
   xcodebuild archive \
-    -project ./Collections/Collections.xcodeproj \
+    -project Collections/Collections.xcodeproj \
     -scheme Collections \
     -destination "generic/platform=${platform}" \
     -archivePath "${ARCHIVE_FOLDER}/${FRAMEWORK_NAME}-${platform}"
