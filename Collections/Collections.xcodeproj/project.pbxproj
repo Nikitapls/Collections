@@ -85,8 +85,8 @@
 		148675BD2BEFFBD2009413BB /* CollectionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				149A91FD2BF109EF00A49499 /* StackStatistics */,
 				149A91FC2BF109E800A49499 /* Stack */,
+				149A91FD2BF109EF00A49499 /* StackStatistics */,
 			);
 			path = CollectionsTests;
 			sourceTree = "<group>";
