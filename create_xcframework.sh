@@ -3,6 +3,7 @@
 readonly SCRIPT_FOLDER=$(dirname -- "${0}")
 readonly ARCHIVE_FOLDER="archives"
 readonly FRAMEWORK_NAME="Collections"
+readonly BUILDS_FOLDER="builds"
 
 cd "${SCRIPT_FOLDER}" || exit
 
@@ -18,13 +19,13 @@ archive_framework() {
 archive_framework iOS
 archive_framework macOS
 
-rm -rf "builds/"
+rm -rf "${BUILDS_FOLDER}/"
 
 xcodebuild -create-xcframework \
     -archive "${ARCHIVE_FOLDER}/${FRAMEWORK_NAME}-iOS.xcarchive" \
     -framework ${FRAMEWORK_NAME}.framework \
     -archive "${ARCHIVE_FOLDER}/${FRAMEWORK_NAME}-macOS.xcarchive" \
     -framework ${FRAMEWORK_NAME}.framework \
-    -output "builds/${FRAMEWORK_NAME}.xcframework"
+    -output "${BUILDS_FOLDER}/${FRAMEWORK_NAME}.xcframework"
 
 rm -rf "${ARCHIVE_FOLDER}/"
