@@ -1,31 +1,31 @@
 #!/usr/bin/env sh
 
-SCRIPT_FOLDER=$(dirname -- "$0")
-
-cd "$SCRIPT_FOLDER" || exit
-
-readonly ARCHIVE_PATH="archives"
+readonly SCRIPT_FOLDER=$(dirname -- "${0}")
+readonly ARCHIVE_FOLDER="archives"
 readonly FRAMEWORK_NAME="Collections"
+readonly BUILDS_FOLDER="builds"
+
+cd "${SCRIPT_FOLDER}" || exit
 
 archive_framework() {
-  platform=$1
+  platform="${1}"
   xcodebuild archive \
-    -project ./Collections/Collections.xcodeproj \
+    -project Collections/Collections.xcodeproj \
     -scheme Collections \
-    -destination "generic/platform=$platform" \
-    -archivePath "$ARCHIVE_PATH/$FRAMEWORK_NAME-$platform" \
-    SKIP_INSTALL=NO \
-    BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+    -destination "generic/platform="${platform}"" \
+    -archivePath ""${ARCHIVE_FOLDER}"/"${FRAMEWORK_NAME}"-"${platform}""
 }
 
 archive_framework iOS
 archive_framework macOS
 
-xcodebuild -create-xcframework \
-    -archive "$ARCHIVE_PATH/$FRAMEWORK_NAME-iOS.xcarchive" \
-    -framework $FRAMEWORK_NAME.framework \
-    -archive "$ARCHIVE_PATH/$FRAMEWORK_NAME-macOS.xcarchive" \
-    -framework $FRAMEWORK_NAME.framework \
-    -output "./builds/$FRAMEWORK_NAME.xcframework"
+rm -rf ""${BUILDS_FOLDER}"/"
 
-rm -rf "$ARCHIVE_PATH/"
+xcodebuild -create-xcframework \
+    -archive ""${ARCHIVE_FOLDER}"/"${FRAMEWORK_NAME}"-iOS.xcarchive" \
+    -framework ""${FRAMEWORK_NAME}".framework" \
+    -archive ""${ARCHIVE_FOLDER}"/"${FRAMEWORK_NAME}"-macOS.xcarchive" \
+    -framework ""${FRAMEWORK_NAME}".framework" \
+    -output ""${BUILDS_FOLDER}"/"${FRAMEWORK_NAME}".xcframework"
+
+rm -rf ""${ARCHIVE_FOLDER}"/"

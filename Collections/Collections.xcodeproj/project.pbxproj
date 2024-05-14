@@ -85,8 +85,8 @@
 		148675BD2BEFFBD2009413BB /* CollectionsTests */ = {
 			isa = PBXGroup;
 			children = (
-				149A91FD2BF109EF00A49499 /* StackStatistics */,
 				149A91FC2BF109E800A49499 /* Stack */,
+				149A91FD2BF109EF00A49499 /* StackStatistics */,
 			);
 			path = CollectionsTests;
 			sourceTree = "<group>";
@@ -467,6 +467,7 @@
 		14EF2BA52BEE8F4B003628E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "";
@@ -495,7 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nikitapuzikov.framework.multiplatform.collections.Collections;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -507,6 +508,7 @@
 		14EF2BA62BEE8F4B003628E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = "";
@@ -535,7 +537,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nikitapuzikov.framework.multiplatform.collections.Collections;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = auto;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
