@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-SCRIPT_FOLDER=$(dirname -- "$0")
+readonly SCRIPT_FOLDER=$(dirname -- "$0")
 
 cd "$SCRIPT_FOLDER" || exit
 
