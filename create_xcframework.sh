@@ -19,11 +19,13 @@ archive_framework() {
 archive_framework iOS
 archive_framework macOS
 
+rm -rf "builds/"
+
 xcodebuild -create-xcframework \
     -archive "$ARCHIVE_PATH/$FRAMEWORK_NAME-iOS.xcarchive" \
     -framework $FRAMEWORK_NAME.framework \
     -archive "$ARCHIVE_PATH/$FRAMEWORK_NAME-macOS.xcarchive" \
     -framework $FRAMEWORK_NAME.framework \
-    -output "./builds/$FRAMEWORK_NAME.xcframework"
+    -output "builds/$FRAMEWORK_NAME.xcframework"
 
 rm -rf "$ARCHIVE_PATH/"
