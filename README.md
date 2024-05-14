@@ -2,13 +2,13 @@
 
 ## About
 
-This repository contains the source code of our custom collections.
-The code is organized into a static framework that can be used in both iOS and macOS projects.
+This repository contains the source code of data structure implementations for both iOS and macOS projects.
+The code is organized into a static framework.
 A `DemoApplication` demonstrating the use of the framework is also included.
 
-## Custom Collections
+## Contents
 
-This repository includes several collections:
+This repository corrently provides the following implementations:
 - The `Stack` class provides basic stack operations.
 - The `StackStatistics` class extends the functionality of the `Stack` with a `minimumElement` method for efficient minimum element retrieval.
 
