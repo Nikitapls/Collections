@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148675CD2BF00975009413BB /* Collections.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148675CC2BF00975009413BB /* Collections.xcframework */; };
 		14C3BA3D2BEEAD15005D2980 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3BA3C2BEEAD15005D2980 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		148675CC2BF00975009413BB /* Collections.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Collections.xcframework; path = Dependencies/Collections.xcframework; sourceTree = "<group>"; };
 		14C3BA392BEEAD15005D2980 /* DemoApplication */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoApplication; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C3BA3C2BEEAD15005D2980 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,17 +34,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148675CD2BF00975009413BB /* Collections.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		148675CB2BF00975009413BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				148675CC2BF00975009413BB /* Collections.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		14C3BA302BEEAD15005D2980 = {
 			isa = PBXGroup;
 			children = (
 				14C3BA3B2BEEAD15005D2980 /* DemoApplication */,
 				14C3BA3A2BEEAD15005D2980 /* Products */,
+				148675CB2BF00975009413BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

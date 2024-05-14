@@ -1,0 +1,709 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "StackStatistics",
+        "printedName": "StackStatistics",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StackStatistics",
+                "printedName": "Collections.StackStatistics<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:11Collections15StackStatisticsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Collections15StackStatisticsVyACyxGSayxGcfc",
+            "mangledName": "$s11Collections15StackStatisticsVyACyxGSayxGcfc",
+            "moduleName": "Collections",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Comparable>",
+            "sugared_genericSig": "<Element where Element : Swift.Comparable>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "count",
+            "printedName": "count",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Collections15StackStatisticsV5countSivp",
+            "mangledName": "$s11Collections15StackStatisticsV5countSivp",
+            "moduleName": "Collections",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Collections15StackStatisticsV5countSivg",
+                "mangledName": "$s11Collections15StackStatisticsV5countSivg",
+                "moduleName": "Collections",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Comparable>",
+                "sugared_genericSig": "<Element where Element : Swift.Comparable>",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isEmpty",
+            "printedName": "isEmpty",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Collections15StackStatisticsV7isEmptySbvp",
+            "mangledName": "$s11Collections15StackStatisticsV7isEmptySbvp",
+            "moduleName": "Collections",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Collections15StackStatisticsV7isEmptySbvg",
+                "mangledName": "$s11Collections15StackStatisticsV7isEmptySbvg",
+                "moduleName": "Collections",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Comparable>",
+                "sugared_genericSig": "<Element where Element : Swift.Comparable>",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "push",
+            "printedName": "push(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Collections15StackStatisticsV4pushyyxF",
+            "mangledName": "$s11Collections15StackStatisticsV4pushyyxF",
+            "moduleName": "Collections",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Comparable>",
+            "sugared_genericSig": "<Element where Element : Swift.Comparable>",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "top",
+            "printedName": "top()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Collections15StackStatisticsV3topxSgyF",
+            "mangledName": "$s11Collections15StackStatisticsV3topxSgyF",
+            "moduleName": "Collections",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Comparable>",
+            "sugared_genericSig": "<Element where Element : Swift.Comparable>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pop",
+            "printedName": "pop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Collections15StackStatisticsV3popxSgyF",
+            "mangledName": "$s11Collections15StackStatisticsV3popxSgyF",
+            "moduleName": "Collections",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Comparable>",
+            "sugared_genericSig": "<Element where Element : Swift.Comparable>",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "minimumElement",
+            "printedName": "minimumElement()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Collections15StackStatisticsV14minimumElementxSgyF",
+            "mangledName": "$s11Collections15StackStatisticsV14minimumElementxSgyF",
+            "moduleName": "Collections",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Comparable>",
+            "sugared_genericSig": "<Element where Element : Swift.Comparable>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11Collections15StackStatisticsV",
+        "mangledName": "$s11Collections15StackStatisticsV",
+        "moduleName": "Collections",
+        "genericSig": "<τ_0_0 where τ_0_0 : Swift.Comparable>",
+        "sugared_genericSig": "<Element where Element : Swift.Comparable>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LastInFirstOutContainer",
+            "printedName": "LastInFirstOutContainer",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:11Collections23LastInFirstOutContainerP",
+            "mangledName": "$s11Collections23LastInFirstOutContainerP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Stack",
+        "printedName": "Stack",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Stack",
+                "printedName": "Collections.Stack<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:11Collections5StackV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11Collections5StackVyACyxGSayxGcfc",
+            "mangledName": "$s11Collections5StackVyACyxGSayxGcfc",
+            "moduleName": "Collections",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Element>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "count",
+            "printedName": "count",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Collections5StackV5countSivp",
+            "mangledName": "$s11Collections5StackV5countSivp",
+            "moduleName": "Collections",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Collections5StackV5countSivg",
+                "mangledName": "$s11Collections5StackV5countSivg",
+                "moduleName": "Collections",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Element>",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isEmpty",
+            "printedName": "isEmpty",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11Collections5StackV7isEmptySbvp",
+            "mangledName": "$s11Collections5StackV7isEmptySbvp",
+            "moduleName": "Collections",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11Collections5StackV7isEmptySbvg",
+                "mangledName": "$s11Collections5StackV7isEmptySbvg",
+                "moduleName": "Collections",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Element>",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "push",
+            "printedName": "push(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Collections5StackV4pushyyxF",
+            "mangledName": "$s11Collections5StackV4pushyyxF",
+            "moduleName": "Collections",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Element>",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "top",
+            "printedName": "top()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Collections5StackV3topxSgyF",
+            "mangledName": "$s11Collections5StackV3topxSgyF",
+            "moduleName": "Collections",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Element>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pop",
+            "printedName": "pop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Collections5StackV3popxSgyF",
+            "mangledName": "$s11Collections5StackV3popxSgyF",
+            "moduleName": "Collections",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Element>",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "Mutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11Collections5StackV",
+        "mangledName": "$s11Collections5StackV",
+        "moduleName": "Collections",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Element>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LastInFirstOutContainer",
+            "printedName": "LastInFirstOutContainer",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:11Collections23LastInFirstOutContainerP",
+            "mangledName": "$s11Collections23LastInFirstOutContainerP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LastInFirstOutContainer",
+        "printedName": "LastInFirstOutContainer",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "Element",
+            "printedName": "Element",
+            "declKind": "AssociatedType",
+            "usr": "s:11Collections23LastInFirstOutContainerP7ElementQa",
+            "mangledName": "$s11Collections23LastInFirstOutContainerP7ElementQa",
+            "moduleName": "Collections",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "push",
+            "printedName": "push(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.Element"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Collections23LastInFirstOutContainerP4pushyy7ElementQzF",
+            "mangledName": "$s11Collections23LastInFirstOutContainerP4pushyy7ElementQzF",
+            "moduleName": "Collections",
+            "genericSig": "<τ_0_0 where τ_0_0 : Collections.LastInFirstOutContainer>",
+            "sugared_genericSig": "<Self where Self : Collections.LastInFirstOutContainer>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Mutating",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "top",
+            "printedName": "top()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.Element?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Element"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Collections23LastInFirstOutContainerP3top7ElementQzSgyF",
+            "mangledName": "$s11Collections23LastInFirstOutContainerP3top7ElementQzSgyF",
+            "moduleName": "Collections",
+            "genericSig": "<τ_0_0 where τ_0_0 : Collections.LastInFirstOutContainer>",
+            "sugared_genericSig": "<Self where Self : Collections.LastInFirstOutContainer>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pop",
+            "printedName": "pop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.Element?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.Element"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11Collections23LastInFirstOutContainerP3pop7ElementQzSgyF",
+            "mangledName": "$s11Collections23LastInFirstOutContainerP3pop7ElementQzSgyF",
+            "moduleName": "Collections",
+            "genericSig": "<τ_0_0 where τ_0_0 : Collections.LastInFirstOutContainer>",
+            "sugared_genericSig": "<Self where Self : Collections.LastInFirstOutContainer>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Mutating",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "Mutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11Collections23LastInFirstOutContainerP",
+        "mangledName": "$s11Collections23LastInFirstOutContainerP",
+        "moduleName": "Collections",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/nikitapuzikov\/Desktop\/Collections\/Collections\/Collections\/StackStatistics.swift",
+      "kind": "Array",
+      "offset": 1045,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/nikitapuzikov\/Desktop\/Collections\/Collections\/Collections\/Stack.swift",
+      "kind": "Array",
+      "offset": 591,
+      "length": 2,
+      "value": "[]"
+    }
+  ]
+}
