@@ -14,7 +14,7 @@ This repository corrently provides the following implementations:
 
 ## Software Requirements
 
-To run the code you need Swift version `5.9.2` or later, Xcode version `15.2.0` or later.
+To run the code you need Swift version `5.10` or later, Xcode version `15.3` or later.
 
 ## Supported platforms
 
