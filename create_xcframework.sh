@@ -1,11 +1,10 @@
 #!/usr/bin/env sh
 
 readonly SCRIPT_FOLDER=$(dirname -- "${0}")
-
-cd "${SCRIPT_FOLDER}" || exit
-
 readonly ARCHIVE_FOLDER="archives"
 readonly FRAMEWORK_NAME="Collections"
+
+cd "${SCRIPT_FOLDER}" || exit
 
 archive_framework() {
   platform="${1}"
