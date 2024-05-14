@@ -12,20 +12,20 @@ archive_framework() {
   xcodebuild archive \
     -project Collections/Collections.xcodeproj \
     -scheme Collections \
-    -destination "generic/platform=${platform}" \
-    -archivePath "${ARCHIVE_FOLDER}/${FRAMEWORK_NAME}-${platform}"
+    -destination "generic/platform="${platform}"" \
+    -archivePath ""${ARCHIVE_FOLDER}"/"${FRAMEWORK_NAME}"-"${platform}""
 }
 
 archive_framework iOS
 archive_framework macOS
 
-rm -rf "${BUILDS_FOLDER}/"
+rm -rf ""${BUILDS_FOLDER}"/"
 
 xcodebuild -create-xcframework \
-    -archive "${ARCHIVE_FOLDER}/${FRAMEWORK_NAME}-iOS.xcarchive" \
-    -framework ${FRAMEWORK_NAME}.framework \
-    -archive "${ARCHIVE_FOLDER}/${FRAMEWORK_NAME}-macOS.xcarchive" \
-    -framework ${FRAMEWORK_NAME}.framework \
-    -output "${BUILDS_FOLDER}/${FRAMEWORK_NAME}.xcframework"
+    -archive ""${ARCHIVE_FOLDER}"/"${FRAMEWORK_NAME}"-iOS.xcarchive" \
+    -framework ""${FRAMEWORK_NAME}".framework" \
+    -archive ""${ARCHIVE_FOLDER}"/"${FRAMEWORK_NAME}"-macOS.xcarchive" \
+    -framework ""${FRAMEWORK_NAME}".framework" \
+    -output ""${BUILDS_FOLDER}"/"${FRAMEWORK_NAME}".xcframework"
 
-rm -rf "${ARCHIVE_FOLDER}/"
+rm -rf ""${ARCHIVE_FOLDER}"/"
