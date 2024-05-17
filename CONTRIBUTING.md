@@ -24,7 +24,7 @@ Please adhere to the following:
 ## How to Submit a PR
 
 1. Make sure that the code builds successfully on the branch which you want to merge to the target branch.
-1. You should check that your code conforms to our style guide (you could follow the steps from the [section](how-to-control-the-style-guide)).
+1. You should check that your code conforms to our style guide (you could follow the steps from the [How to Control the Style Guide](./CONTRIBUTING.md#how-to-control-the-style-guide)).
 1. Make sure that your PR has an addressed issue attached to it.
 1. Your PR description should describe the list of changes in it.
 1. Your PR shouldn't have any conflicts with the target branch.
