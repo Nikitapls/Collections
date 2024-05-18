@@ -2,6 +2,7 @@
 
 The development environment consists of:
 - Xcode `15.3`
+- Swift `5.10`
 - SwiftLint `0.53.0`
 - SwiftFormat `0.53.8`
 
@@ -13,7 +14,6 @@ Follow these steps to apply our style guide rules to your code:
 1. To use `SwiftFormat`, run this command: `swiftformat --config <path_to_swiftformat_config> <path_to_check>`, where `<path_to_swiftformat_config>` is a path to the `.swiftformat` file from the current repository, `<path_to_check>` is path to files or directories to be processed.
 1. To use `SwiftLint`, run this command: `swiftlint --config <path_to_swiftlint_config> <path_to_check>`, where `<path_to_swiftlint_config>` is a path to the `.swiftlint.yml` file from the current repository, `<path_to_check>` is path to files or directories to be processed.
 1. Fix all warnings or ignore them only if you're sure it's needed in your situation.
-1. Commit the changes to your branch.
 
 ## Issue Submission Guidelines
 
