@@ -36,3 +36,5 @@ Follow these steps to submit an issue:
 1. Make sure that your PR has an addressed issue attached to it.
 1. Your PR description should describe the list of changes in it.
 1. Your PR shouldn't have any conflicts with the target branch.
+1. Before merging your PR, ensure it has been reviewed and approved by at least one member of the team.
+1. Do not merge your PR without approval. This helps to avoid introducing unstable code into the repository.
