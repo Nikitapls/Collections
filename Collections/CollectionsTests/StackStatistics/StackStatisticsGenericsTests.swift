@@ -1,5 +1,5 @@
-import XCTest
 import Collections
+import XCTest
 
 final class StackStatisticsGenericsTests: XCTestCase {
     func test_withVariousGenericParameters() {

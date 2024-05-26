@@ -1,5 +1,5 @@
-import XCTest
 import Collections
+import XCTest
 
 final class StackStatisticsCountTests: XCTestCase {
     func test_count_withEmptyStack_returnsZero() {

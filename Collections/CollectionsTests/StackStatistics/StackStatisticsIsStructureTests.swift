@@ -1,5 +1,5 @@
-import XCTest
 import Collections
+import XCTest
 
 final class StackStatisticsIsStructureTests: XCTestCase {
     func test_stack_isStructure() {

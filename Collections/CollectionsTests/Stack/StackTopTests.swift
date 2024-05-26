@@ -1,5 +1,5 @@
-import XCTest
 import Collections
+import XCTest
 
 final class StackTopTests: XCTestCase {
     func test_top_withEmptyStack_returnsNil() {

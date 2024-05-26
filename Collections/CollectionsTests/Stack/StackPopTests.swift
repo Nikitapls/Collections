@@ -1,5 +1,5 @@
-import XCTest
 import Collections
+import XCTest
 
 final class StackPopTests: XCTestCase {
     var stack = Stack<Int>()
@@ -47,7 +47,7 @@ final class StackPopTests: XCTestCase {
 
     func test_pop_withNonEmptyStack_returnsElementsAccordingToLifo() {
         // Given
-        let pushedElements = Array(-10 ... 1_000)
+        let pushedElements = Array(-10...1_000)
         let expectedPoppedElements = Array(pushedElements.reversed())
         stack = Stack(pushedElements)
 

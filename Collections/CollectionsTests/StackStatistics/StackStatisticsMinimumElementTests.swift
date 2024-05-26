@@ -1,5 +1,5 @@
-import XCTest
 import Collections
+import XCTest
 
 final class StackStatisticsMinimumElementTests: XCTestCase {
     private class DummyClass: Comparable {

@@ -1,5 +1,5 @@
-import XCTest
 import Collections
+import XCTest
 
 final class StackStatisticsPushTests: XCTestCase {
     func test_push_addsElementToStack() {
