@@ -21,11 +21,17 @@ To run the code you need Swift version `5.10` or later, Xcode version `15.3` or 
 This framework supports both macOS and iOS application development.
 The minimum supported versions are `12.0` for iOS and `10.13` for macOS.
 
-## Usage
+## Integration
 
-To integrate the framework in your project:
+### Swift Package Manager
+
+### XCFramework
+
+There are two ways to get the `Collections.xcframework`:
 1. Download the latest release version of the `Collections.xcramework` from this repository.
-2. Add the `Collections.xcramework` to your project. We recommend you to choose the `Do not embed` option.
+2. Build the xcframework using `./create_xcframework.sh` or you may follow the [instructions](https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle#Create-archives-for-frameworks-or-libraries) provided by Apple.
+
+Once you have the `Collections.xcframework`, you can add it to your project. We recommend choosing the `Do not embed` option.
 
 ## Versioning
 
