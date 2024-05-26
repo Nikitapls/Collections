@@ -25,6 +25,20 @@ The minimum supported versions are `12.0` for iOS and `10.13` for macOS.
 
 ### Swift Package Manager
 
+`Collections.xcframework` supports integration via Swift Package Manager starting from the `0.2.0` version.
+
+Follow these steps to import the Swift package:
+
+1. In Xcode, install the Google Mobile Ads Swift Package by navigating to File > Add Packages....
+
+1. In the prompt that appears, search for the Collections GitHub repository:
+
+```
+https://github.com/nikitapls/Collections
+```
+
+1. Select the version of the Collections Swift Package you want to use. For new projects, we recommend using the Up to Next Major Version.
+
 ### XCFramework
 
 There are two ways to get the `Collections.xcframework`:
