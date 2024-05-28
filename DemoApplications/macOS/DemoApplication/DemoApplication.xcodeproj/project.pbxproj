@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1431FAD02BFC6D2200148655 /* Collections.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1431FACF2BFC6D2200148655 /* Collections.xcframework */; };
 		14C3BA3D2BEEAD15005D2980 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3BA3C2BEEAD15005D2980 /* main.swift */; };
+		14CDD04B2C01ED45006BE3F8 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 14CDD04A2C01ED45006BE3F8 /* Collections */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1431FACF2BFC6D2200148655 /* Collections.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Collections.xcframework; path = Dependencies/Collections.xcframework; sourceTree = "<group>"; };
 		14C3BA392BEEAD15005D2980 /* DemoApplication */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoApplication; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C3BA3C2BEEAD15005D2980 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,27 +33,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1431FAD02BFC6D2200148655 /* Collections.xcframework in Frameworks */,
+				14CDD04B2C01ED45006BE3F8 /* Collections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1431FACE2BFC6D2200148655 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1431FACF2BFC6D2200148655 /* Collections.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		14C3BA302BEEAD15005D2980 = {
 			isa = PBXGroup;
 			children = (
 				14C3BA3B2BEEAD15005D2980 /* DemoApplication */,
 				14C3BA3A2BEEAD15005D2980 /* Products */,
-				1431FACE2BFC6D2200148655 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +80,9 @@
 			dependencies = (
 			);
 			name = DemoApplication;
+			packageProductDependencies = (
+				14CDD04A2C01ED45006BE3F8 /* Collections */,
+			);
 			productName = DemoApplication;
 			productReference = 14C3BA392BEEAD15005D2980 /* DemoApplication */;
 			productType = "com.apple.product-type.tool";
@@ -118,6 +111,9 @@
 				Base,
 			);
 			mainGroup = 14C3BA302BEEAD15005D2980;
+			packageReferences = (
+				14CDD0492C01ED45006BE3F8 /* XCLocalSwiftPackageReference "../../.." */,
+			);
 			productRefGroup = 14C3BA3A2BEEAD15005D2980 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -301,6 +297,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		14CDD0492C01ED45006BE3F8 /* XCLocalSwiftPackageReference "../../.." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14CDD04A2C01ED45006BE3F8 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Collections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14C3BA312BEEAD15005D2980 /* Project object */;
 }
