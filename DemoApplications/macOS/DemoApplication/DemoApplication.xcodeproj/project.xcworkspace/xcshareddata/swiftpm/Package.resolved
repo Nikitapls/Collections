@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Nikitapls/Collections",
+      "state" : {
+        "revision" : "c32c8080b2db0aa32c3bcd48dd0d886e95e8a58f",
+        "version" : "0.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}

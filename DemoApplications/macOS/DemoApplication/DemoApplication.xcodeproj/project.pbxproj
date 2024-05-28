@@ -3,12 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A15EA02C06214000BB4893 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 14A15E9F2C06214000BB4893 /* Collections */; };
 		14C3BA3D2BEEAD15005D2980 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C3BA3C2BEEAD15005D2980 /* main.swift */; };
-		14CDD04B2C01ED45006BE3F8 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 14CDD04A2C01ED45006BE3F8 /* Collections */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14CDD04B2C01ED45006BE3F8 /* Collections in Frameworks */,
+				14A15EA02C06214000BB4893 /* Collections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +81,7 @@
 			);
 			name = DemoApplication;
 			packageProductDependencies = (
-				14CDD04A2C01ED45006BE3F8 /* Collections */,
+				14A15E9F2C06214000BB4893 /* Collections */,
 			);
 			productName = DemoApplication;
 			productReference = 14C3BA392BEEAD15005D2980 /* DemoApplication */;
@@ -112,7 +112,7 @@
 			);
 			mainGroup = 14C3BA302BEEAD15005D2980;
 			packageReferences = (
-				14CDD0492C01ED45006BE3F8 /* XCLocalSwiftPackageReference "../../.." */,
+				14A15E9E2C06213F00BB4893 /* XCRemoteSwiftPackageReference "Collections" */,
 			);
 			productRefGroup = 14C3BA3A2BEEAD15005D2980 /* Products */;
 			projectDirPath = "";
@@ -298,16 +298,21 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		14CDD0492C01ED45006BE3F8 /* XCLocalSwiftPackageReference "../../.." */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../..;
+/* Begin XCRemoteSwiftPackageReference section */
+		14A15E9E2C06213F00BB4893 /* XCRemoteSwiftPackageReference "Collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Nikitapls/Collections";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		14CDD04A2C01ED45006BE3F8 /* Collections */ = {
+		14A15E9F2C06214000BB4893 /* Collections */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 14A15E9E2C06213F00BB4893 /* XCRemoteSwiftPackageReference "Collections" */;
 			productName = Collections;
 		};
 /* End XCSwiftPackageProductDependency section */
