@@ -1,5 +1,6 @@
 /// An ordered collection of elements that works as a stack.
-/// The order in which an element added to or removed from a stack is described as “last in, first out”,
+/// The order in which an element added to or removed from a stack
+/// is described as “last in, first out”,
 /// refer the `LastInFirstOutContainer` protocol for more details.
 /// In addition, data type allows to get simple statistics
 /// like the current minimum element among stored in the stack.
