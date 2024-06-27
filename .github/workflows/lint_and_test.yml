@@ -34,7 +34,6 @@ jobs:
       if: always()
       run: swiftformat --lint --config .swiftformat ./
 
-
   run_tests:
     runs-on: macos-14
     steps:
