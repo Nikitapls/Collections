@@ -60,7 +60,7 @@
 --exponentgrouping disabled # Group exponent digits: "enabled" or "disabled" (default)
 --hexliteralcase uppercase # Casing for hex literals: "uppercase" (default) or "lowercase"
 --exponentcase uppercase # Case of 'e' in numbers: "lowercase" or "uppercase" (default)
-# --wrapenumcases	always # Wrap enum cases: "always" (default) or "with-values". Disabled since it isn't recognized by the tool.
+# --wrapenumcases always # Wrap enum cases: "always" (default) or "with-values". Disabled since it isn't recognized by the tool.
 
 # Enabled rules
 
