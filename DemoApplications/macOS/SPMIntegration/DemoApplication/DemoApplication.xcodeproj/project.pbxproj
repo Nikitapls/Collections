@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1470ADC52D1743B300C0F51D /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 1470ADC42D1743B300C0F51D /* Collections */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		147310352D10BAED0067B54A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1470ADC52D1743B300C0F51D /* Collections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = DemoApplication;
 			packageProductDependencies = (
+				1470ADC42D1743B300C0F51D /* Collections */,
 			);
 			productName = DemoApplication;
 			productReference = 147310372D10BAED0067B54A /* DemoApplication */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = 1473102E2D10BAED0067B54A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1470ADC32D1743B300C0F51D /* XCLocalSwiftPackageReference "../../../../../Collections" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 147310382D10BAED0067B54A /* Products */;
 			projectDirPath = "";
@@ -289,6 +298,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		1470ADC32D1743B300C0F51D /* XCLocalSwiftPackageReference "../../../../../Collections" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../../../../Collections;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1470ADC42D1743B300C0F51D /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Collections;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1473102F2D10BAED0067B54A /* Project object */;
 }
